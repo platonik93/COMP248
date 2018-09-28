@@ -1,13 +1,15 @@
 import java.util.Scanner;
 
-public class Question2 {
+public class Question1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int option;
+		double listening,reading,writing,speaking; //Results for each proficency
+	
 		Scanner userInput = new Scanner(System.in);
 		
-		System.out.println("-------****-------****-------****-------****-----****-----\n" + 
+		System.out.print("-------****-------****-------****-------****-----****-----\n" + 
 				" Welcome to Concordia Language Proficiency Evaluator!\r\n" + 
 				" 		based on IELTS exam\n" + 
 				"-------****-------****-------****-------****-----****-----\n\n" + "Here are the available options:\n" + 
@@ -15,6 +17,14 @@ public class Question2 {
 						"2 – Evaluation of your language proficiency\n\n" + 
 						"Please enter the digit corresponding to your case: ");
 		option = userInput.nextInt();
+		System.out.println();
+		
+		while ((option!=1)&&(option!=2)){
+		System.out.println("Please enter 1 or 2 only: ");
+		option = userInput.nextInt();
+		System.out.println();}
+			
+		
 		if (option==1) 
 			System.out.println("- The overall score of IELTS exam of applicants needs to be equal or above 6.5 and the scores\r\n" + 
 					"for writing and reading skills should not be below 6.0. If your overall score is 6, and your\r\n" + 
@@ -24,7 +34,31 @@ public class Question2 {
 					"Thanks for choosing Concordia.");
 			
 		
-		if (option==2);
+		if (option==2);{
+		
+			System.out.print("Please enter your listening score: ");
+			listening = userInput.nextDouble();
+			
+			System.out.println();
+			
+			System.out.print("Please enter your speaking score: ");
+			speaking = userInput.nextDouble();
+			
+			System.out.println();
+			
+			System.out.print("Please enter your reading score: ");
+			reading = userInput.nextDouble();
+			
+			System.out.println();
+			
+			System.out.print("Please enter your writing score: ");
+			writing = userInput.nextDouble();
+			
+			
+		}
+		
+		
+		
 			
 	}
 
