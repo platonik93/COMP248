@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Question2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int option;
+		Scanner userInput = new Scanner(System.in);
+		
+		System.out.println("-------****-------****-------****-------****-----****-----\n" + 
+				" Welcome to Concordia Language Proficiency Evaluator!\r\n" + 
+				" 		based on IELTS exam\n" + 
+				"-------****-------****-------****-------****-----****-----\n\n" + "Here are the available options:\n" + 
+						"1 – Language Proficiency Requirements for the Applicant\n" + 
+						"2 – Evaluation of your language proficiency\n\n" + 
+						"Please enter the digit corresponding to your case: ");
+		option = userInput.nextInt();
+		if (option==1) 
+			System.out.println("- The overall score of IELTS exam of applicants needs to be equal or above 6.5 and the scores\r\n" + 
+					"for writing and reading skills should not be below 6.0. If your overall score is 6, and your\r\n" + 
+					"reading and writing scores are at least 6, you will be eligible for conditional admission. So\r\n" + 
+					"you need to take an English course in the first semester. Otherwise you have to retake the IELTS\r\n" + 
+					"exam.\r\n" + 
+					"Thanks for choosing Concordia.");
+			
+		
+		if (option==2);
+			
+	}
+
+}
