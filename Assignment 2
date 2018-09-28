@@ -34,7 +34,7 @@ public class Question1 {
 					"Thanks for choosing Concordia.");
 			
 		
-		if (option==2);{
+		if (option==2){
 		
 			System.out.print("Please enter your listening score: ");
 			listening = userInput.nextDouble();
@@ -53,6 +53,11 @@ public class Question1 {
 			
 			System.out.print("Please enter your writing score: ");
 			writing = userInput.nextDouble();
+			
+			double sum = listening+speaking+reading+writing;
+			double average = sum/4;
+			int roundup = Double.
+			System.out.println("Your average is "+average);
 			
 			
 		}
