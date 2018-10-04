@@ -57,7 +57,7 @@ public class Question1 {
 			double sum = listening+speaking+reading+writing;
 			double average = sum/4;
 			int roundup = Double.
-			System.out.println("Your average is "+average);
+			System.out.println("Your average is "+average + testd);
 			
 			
 		}
