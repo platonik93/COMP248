@@ -73,12 +73,7 @@ public class Question1 {
 				
 			System.out.println("Your overall score is : " + overall);
 			
-				
-			//double average = sum/4;
-			
-			
-			//int roundup = Double.
-			//System.out.println("Your average is "+average + );
+
 			
 			
 		}
