@@ -13,8 +13,8 @@ public class Question1 {
 				" Welcome to Concordia Language Proficiency Evaluator!\r\n" + 
 				" 		based on IELTS exam\n" + 
 				"-------****-------****-------****-------****-----****-----\n\n" + "Here are the available options:\n" + 
-						"1 – Language Proficiency Requirements for the Applicant\n" + 
-						"2 – Evaluation of your language proficiency\n\n" + 
+						"1 - Language Proficiency Requirements for the Applicant\n" + 
+						"2 - Evaluation of your language proficiency\n\n" + 
 						"Please enter the digit corresponding to your case: ");
 		option = userInput.nextInt();
 		System.out.println();
@@ -55,9 +55,30 @@ public class Question1 {
 			writing = userInput.nextDouble();
 			
 			double sum = listening+speaking+reading+writing;
-			double average = sum/4;
-			int roundup = Double.
-			System.out.println("Your average is "+average + );
+			double average = sum / 4;
+			double overall;
+	
+			
+			if ((average%1) < 0.25) 
+				overall = (average -(average%1));
+			
+			
+			else if ((average%1) >= 0.25 && (average%1) < 0.75) 
+				
+				overall = (average -(average%1) + 0.5);
+			
+			else 
+				
+				overall = ((average - (average%1)) + 1);
+				
+			System.out.println("Your overall score is : " + overall);
+			
+				
+			//double average = sum/4;
+			
+			
+			//int roundup = Double.
+			//System.out.println("Your average is "+average + );
 			
 			
 		}
