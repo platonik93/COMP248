@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Question1 {
 
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int option;
@@ -18,7 +20,7 @@ public class Question1 {
 						"Please enter the digit corresponding to your case: ");
 		option = userInput.nextInt();
 		System.out.println();
-		
+		//test
 		while ((option!=1)&&(option!=2)){
 		System.out.println("Please enter 1 or 2 only: ");
 		option = userInput.nextInt();
@@ -52,8 +54,10 @@ public class Question1 {
 			System.out.println();
 			
 			System.out.print("Please enter your writing score: ");
-			writing = userInput.nextDouble();
 			
+			
+			writing = userInput.nextDouble();
+			System.out.println();
 			double sum = listening+speaking+reading+writing;
 			double average = sum / 4;
 			double overall;
@@ -73,8 +77,27 @@ public class Question1 {
 				
 			System.out.println("Your overall score is : " + overall);
 			
-
+			System.out.println("Your Writing score is: " + writing);
 			
+			System.out.println("Your Reading score is " + reading +"\n");
+			
+			if ((overall >= 6.5) && (reading >=6) && (writing >= 6))
+				System.out.println("Congratulations: You are eligible for Admission.");
+			
+			else if ((overall >= 6.5) && ((reading <6) || (writing <6)))
+				System.out.println("You are eligible for Conditional Admission.");
+			
+			else if ((overall == 6) && ((reading >=6) && (writing >=6)))
+				System.out.println("You are eligible for Conditional Admission.");
+			
+			else if ((overall == 6) && ((reading <6) || (writing <6)))
+				System.out.println("Sorry, you have to retake the exam.");
+			
+			else if (overall < 6)
+			
+				System.out.println("Sorry, you have to retake the exam.");
+		
+			userInput.close();
 			
 		}
 		
