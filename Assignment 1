@@ -17,7 +17,7 @@ public class assignement1 {
 	public static void main(String[] args) {
 
 		/*  Question 1:
-		 * 
+		 * test
 		 * This function use the println method from the system.out class in order to print multiple strings 
 		 * the are followed by new line. An /n escape character is used in each
 		 * line to add a new line. After which all lines are added together to produce
