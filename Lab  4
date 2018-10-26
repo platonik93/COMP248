@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class lab4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner userInput = new Scanner (System.in);
+		
+		int hours = 0;
+	
+		String Package; 
+
+		System.out.print("Enter hours followed by package: ");
+		
+		hours = userInput.nextInt();
+		Package = userInput.next();
+		
+		while (hours != -1) {
+			
+	
+			//switch (Package)
+			if (Package.equals("A")) {
+				//System.out.println("TRUE A"); // Testing
+				hours = hours - 10;
+						if (hours > 0)
+							System.out.println("The bill amount is " + (9.95+(hours*2)));
+						else System.out.println("The bill amount is " + 9.95 );
+			}
+			
+			else if (Package.equals("B")) {
+				hours = hours - 20;
+						if (hours > 0)
+							System.out.println("The bill amount is " + (13.95+(hours*1)));
+						
+						else System.out.println("The bill amount is " + 13.95 );
+				}
+			
+			
+			else if (Package.equals("C")) {
+					System.out.println("the bill amount is "+ 19.95);
+				}
+			
+			System.out.print("Enter next hours followed by package: ");
+			hours = userInput.nextInt();
+			Package = userInput.nextLine();
+			
+		
+		}
+		}
+	
+	
+	}
+	
+
+
