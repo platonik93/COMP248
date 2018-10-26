@@ -16,11 +16,11 @@ public class lab4 {
 		Package = userInput.next();
 		
 		while (hours != -1) {
-			
-	
-			//switch (Package)
+			System.out.println(hours); // Testing
+			System.out.println(Package); // Testing
+		
 			if (Package.equals("A")) {
-				//System.out.println("TRUE A"); // Testing
+				
 				hours = hours - 10;
 						if (hours > 0)
 							System.out.println("The bill amount is " + (9.95+(hours*2)));
@@ -41,9 +41,9 @@ public class lab4 {
 				}
 			
 			System.out.print("Enter next hours followed by package: ");
+			
 			hours = userInput.nextInt();
 			Package = userInput.nextLine();
-			
 		
 		}
 		}
