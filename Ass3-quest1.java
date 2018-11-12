@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class question1redo {
+public class question1 {
 
 	public static void main(String[] args) {
 
@@ -63,8 +63,7 @@ public class question1redo {
 					for (int i = 0; i < goals16.length; i++) {
 
 						goals16[i] = (int) (Math.random() * 5);
-						// System.out.print(team16[i] + "|");
-						// System.out.print(goals16[i] + "|");
+
 					}
 
 					// ROUND 1 with 16 TEAMS
@@ -105,7 +104,6 @@ public class question1redo {
 								break;
 							}
 
-							// System.out.println("EVEN" + i);
 						}
 
 						j++;
@@ -121,15 +119,13 @@ public class question1redo {
 					// Testing printout for goals during game16 and tracking in 2D array
 					for (int i = 0; i < team16.length; i++) {
 
-						// System.out.print(goals16[i] + "|");
-						tournResults[tournNmbr][j] += goals16[i];
+						tournResults[tournNmbr][i] += goals16[i];
 
 					}
 					// Testing printout for team winners during the game16
-					// System.out.println("");
+
 					for (int i = 0; i < team8.length; i++) {
 
-						// System.out.print(team8[i] + "|");
 					}
 
 					j = 0;
@@ -176,7 +172,6 @@ public class question1redo {
 								break;
 							}
 
-							// System.out.println("EVEN" + i);
 						}
 
 						j++;
@@ -190,14 +185,12 @@ public class question1redo {
 					// Testing printout for goals during game16
 					for (int i = 0; i < team8.length; i++) {
 
-						// System.out.print(goals8[i] + "|");
-						tournResults[tournNmbr][j] += goals8[i];
+						tournResults[tournNmbr][i] += goals8[i];
 					}
 					// Testing printout for team winners during the game16
-					// System.out.println("");
+
 					for (int i = 0; i < team4.length; i++) {
 
-						// System.out.print(team4[i] + "|");
 					}
 
 					j = 0;
@@ -244,7 +237,6 @@ public class question1redo {
 								break;
 							}
 
-							// System.out.println("EVEN" + i);
 						}
 
 						j++;
@@ -259,13 +251,12 @@ public class question1redo {
 					for (int i = 0; i < team4.length; i++) {
 
 						// System.out.print(goals4[i] + "|");
-						tournResults[tournNmbr][j] += goals4[i];
+						tournResults[tournNmbr][i] += goals4[i];
 					}
 					// Testing printout for team winners during the finals
-					// System.out.println("");
+
 					for (int i = 0; i < finals.length; i++) {
 
-						// System.out.print(finals[i] + "|");
 					}
 
 					System.out.print("FINALS");
@@ -311,13 +302,12 @@ public class question1redo {
 					System.out
 							.print("[" + finals[0] + " " + goalsFinal[0] + ":" + goalsFinal[1] + " " + finals[1] + "]");
 					System.out.println("");
-					// System.out.println("EVEN" + i);
 
 					// Testing printout for goals during game16
 					for (int i = 0; i < finals.length; i++) {
 
 						// System.out.print(goalsFinal[i] + "|");
-						tournResults[tournNmbr][j] += goalsFinal[i];
+						tournResults[tournNmbr][i] += goalsFinal[i];
 					}
 					// Testing printout for team winners during the game16
 
@@ -331,13 +321,9 @@ public class question1redo {
 						break;
 					}
 
-					// if (tournNmbr==20) {
-
 				}
 
 			}
-			
-			
 
 		}
 
@@ -345,11 +331,11 @@ public class question1redo {
 			for (int z = 0; z < tournNmbr; z++) {
 				System.out.print("[Tournament " + z + "] Total goals: [");
 				for (int i = 0; i < 16; i++)
-					System.out.print(tournResults[z][i]+ ", " );
+					System.out.print(tournResults[z][i] + ", ");
 				System.out.print("] [Average: ");
 				System.out.println("");
 			}
-			
+
 		}
 
 		if (favoriteAvail == false)
@@ -357,50 +343,3 @@ public class question1redo {
 
 	}
 }
-
-/*
- * 
- * Scanner userInput = new Scanner(System.in);
- * 
- * System.out.println("Please enter your Favorite team: ");
- * 
- * favorite = userInput.next();
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * for (int i = 0; i <= 15; i++) { // Loop for comparison of each array element
- * 
- * if (favorite.equalsIgnoreCase(teams16[i]))
- * 
- * { System.out.println("Hello" + Math.random() );
- * 
- * }
- * 
- * else { System.out.println("Please enter a team that is within the list.");
- * 
- * break; // break to the main future while loop }
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * }
- */
