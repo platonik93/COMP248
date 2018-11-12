@@ -330,8 +330,10 @@ public class question1 {
 		if (favoriteAvail == true) {
 			for (int z = 0; z < tournNmbr; z++) {
 				System.out.print("[Tournament " + z + "] Total goals: [");
+				
 				for (int i = 0; i < 16; i++)
 					System.out.print(tournResults[z][i] + ", ");
+				
 				System.out.print("] [Average: ");
 				System.out.println("");
 			}
